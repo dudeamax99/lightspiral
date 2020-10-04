@@ -76,10 +76,12 @@
         }
     }
 
-    function c( t ) {
+/*  
+  function c( t ) {
         t.keyCode === 32 && p();
     }
 
+*/
     function m( t ) {
         for ( var e, n = document.getElementById( t ), i = n.innerHTML.replace( "&amp;", "&" ).split( "" ), a = "", o = 0, s = i.length; s > o; o++ ) {
             e = i[ o ].replace( "&", "&amp" );
@@ -225,7 +227,7 @@
         document.addEventListener( "touchstart", i );
         document.body.addEventListener( "orientationchange", s );
         t.addEventListener( "resize", s );
-        t.addEventListener( "keyup", c );
+//        t.addEventListener( "keyup", c );
         t.addEventListener( "focus", r );
         t.addEventListener( "blur", h );
         s();
